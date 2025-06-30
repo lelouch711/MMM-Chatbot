@@ -1,3 +1,11 @@
-langchain
+langchain>=0.1.14
+ollama
 pandas
 faiss-cpu
+openpyxl
+streamlit
+jupyter
+ipykernel
+matplotlib
+plotly
+gradio
