@@ -5,7 +5,7 @@ def increase_total_spend(df,changes):
     for(channel,sub_channel), pct_change in changes.items():
         mask = (df_results["Channel"] == channel)
         if pd.notna(sub_channel):
-            mask &= (df_results['Sub_CHannel']  == sub_channel)
+            mask &= (df_results['Sub_Channel']  == sub_channel)
         row_idx = df_results[mask].index
 
         for idx in row_idx:
