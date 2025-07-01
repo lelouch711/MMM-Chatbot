@@ -1,2 +1,3 @@
 from .increase_total_spend import increase_total_spend
 from .reallocate_spend import reallocate_spend
+from .parse_natural_language import parse_natural_language

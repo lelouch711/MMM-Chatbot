@@ -1,3 +1,4 @@
+import pandas as pd
 def increase_total_spend(df,changes):
     df_results = df.copy()
     results = []

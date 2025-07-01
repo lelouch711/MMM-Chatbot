@@ -13,6 +13,6 @@ def load_and_embed_data(csv_path):
         doc = ", ".join([f"{col}: {row[col]}" for col in df.columns])
         docs.append(doc)
 
-    embedding = OllamaEmbeddings(model="mistral", base_url="http://localhost:11434")
+    embedding = OllamaEmbeddings(model="llama3", base_url="http://localhost:11434")
     vectorstore = FAISS.from_texts(docs, embedding)
     return docs, vectorstore
